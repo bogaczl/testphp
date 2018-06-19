@@ -1,9 +1,9 @@
 <html>
  <head>
-  <title>PHP Openshift Test</title>
+  <title>Strimzi cluster status</title>
  </head>
  <body>
-  <?php echo '<p>Hello Openshift World</p>'; ?> 
-  <?php echo 'value from env: ', getenv('TESTKEY'); ?> 
+  <?php echo '<p>Performance:</p>' . nl2br(getenv('PROVIDER')) . nl2br(getenv('CONSUMER')); ?> 
+  <?php echo '<hr/><p>Topics:</p><br/>' . nl2br(getenv('TOPICS')); ?>  
  </body>
 </html>
